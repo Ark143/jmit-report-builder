@@ -9,5 +9,7 @@
   "description": "Crystal Report Clone for ERPNext v15",
   "email": "info@jmit.com",
   "license": "MIT",
-  "category": "Tools"
+  "category": "Tools",
+  "web_include_js": [],
+  "web_include_css": []
 }
