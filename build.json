@@ -1,12 +1,2 @@
-{
-  "jmit_report_builder": {
-    "js": [
-      "jmit_report_builder/public/js/jmit_report_builder.js",
-      "jmit_report_builder/public/js/report_designer.js"
-    ],
-    "css": [
-      "jmit_report_builder/public/css/jmit_report_builder.css"
-    ]
-  }
-}
+{}
 
