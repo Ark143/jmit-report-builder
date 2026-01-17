@@ -1,0 +1,14 @@
+{
+	"name": "JMIT Report Builder",
+	"version": "0.0.1",
+	"description": "Crystal Report Clone for ERPNext v15",
+	"modules": [
+		{
+			"name": "JMIT Report Builder",
+			"description": "Advanced Report Builder with grouping, subtotals, stored procedures and SQL views",
+			"icon": "fa fa-file-pdf-o",
+			"color": "#2563eb",
+			"type": "module"
+		}
+	]
+}

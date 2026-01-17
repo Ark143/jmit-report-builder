@@ -1,0 +1,68 @@
+{
+	"creation": "2024-01-18 00:00:00.000000",
+	"doctype": "DocType",
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"field_name",
+		"display_label",
+		"field_type",
+		"width",
+		"alignment",
+		"format",
+		"visible"
+	],
+	"fields": [
+		{
+			"fieldname": "field_name",
+			"fieldtype": "Data",
+			"label": "Field Name",
+			"reqd": 1
+		},
+		{
+			"fieldname": "display_label",
+			"fieldtype": "Data",
+			"label": "Display Label"
+		},
+		{
+			"fieldname": "field_type",
+			"fieldtype": "Select",
+			"label": "Field Type",
+			"options": "Text\nNumber\nDate\nCurrency\nPercent",
+			"default": "Text"
+		},
+		{
+			"fieldname": "width",
+			"fieldtype": "Int",
+			"label": "Width (%)"
+		},
+		{
+			"fieldname": "alignment",
+			"fieldtype": "Select",
+			"label": "Alignment",
+			"options": "Left\nCenter\nRight",
+			"default": "Left"
+		},
+		{
+			"fieldname": "format",
+			"fieldtype": "Data",
+			"label": "Format"
+		},
+		{
+			"fieldname": "visible",
+			"fieldtype": "Check",
+			"label": "Visible",
+			"default": 1
+		}
+	],
+	"idx": 1,
+	"istable": 1,
+	"modified": "2024-01-18 00:00:00.000000",
+	"modified_by": "Administrator",
+	"module": "JMIT Report Builder",
+	"name": "JMIT Report Field",
+	"owner": "Administrator",
+	"permissions": [],
+	"sort_field": "modified",
+	"sort_order": "Desc"
+}

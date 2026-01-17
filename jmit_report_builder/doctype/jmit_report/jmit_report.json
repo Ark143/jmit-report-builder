@@ -1,0 +1,147 @@
+{
+	"autoname": "field:report_name",
+	"creation": "2024-01-18 00:00:00.000000",
+	"doctype": "DocType",
+	"document_type": "",
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"report_name",
+		"description",
+		"section_data_source",
+		"data_source",
+		"query_type",
+		"section_query",
+		"report_query",
+		"section_display",
+		"columns",
+		"section_grouping",
+		"grouping_fields",
+		"subtotal_config",
+		"section_filters",
+		"filters",
+		"section_formatting",
+		"enabled"
+	],
+	"fields": [
+		{
+			"fieldname": "report_name",
+			"fieldtype": "Data",
+			"label": "Report Name",
+			"reqd": 1,
+			"unique": 1
+		},
+		{
+			"fieldname": "description",
+			"fieldtype": "Text",
+			"label": "Description"
+		},
+		{
+			"fieldname": "section_data_source",
+			"fieldtype": "Section Break",
+			"label": "Data Source"
+		},
+		{
+			"fieldname": "data_source",
+			"fieldtype": "Select",
+			"label": "Data Source Type",
+			"options": "SQL Query\nStored Procedure\nDatabase View\nDocType",
+			"reqd": 1
+		},
+		{
+			"fieldname": "query_type",
+			"fieldtype": "Select",
+			"label": "Query Type",
+			"options": "SQL\nSTORED_PROCEDURE\nVIEW",
+			"default": "SQL"
+		},
+		{
+			"fieldname": "section_query",
+			"fieldtype": "Section Break",
+			"label": "Query Configuration"
+		},
+		{
+			"fieldname": "report_query",
+			"fieldtype": "Code",
+			"label": "Report Query",
+			"options": "sql",
+			"description": "Enter SQL query, stored procedure name, or view name"
+		},
+		{
+			"fieldname": "section_display",
+			"fieldtype": "Section Break",
+			"label": "Display Fields"
+		},
+		{
+			"fieldname": "columns",
+			"fieldtype": "Table",
+			"label": "Report Columns",
+			"options": "JMIT Report Field"
+		},
+		{
+			"fieldname": "section_grouping",
+			"fieldtype": "Section Break",
+			"label": "Grouping & Subtotals"
+		},
+		{
+			"fieldname": "grouping_fields",
+			"fieldtype": "Table",
+			"label": "Grouping Fields",
+			"options": "JMIT Report Grouping"
+		},
+		{
+			"fieldname": "subtotal_config",
+			"fieldtype": "Code",
+			"label": "Subtotal Configuration",
+			"options": "json",
+			"description": "JSON configuration for subtotals: [{'field': 'amount', 'operation': 'SUM'}]"
+		},
+		{
+			"fieldname": "section_filters",
+			"fieldtype": "Section Break",
+			"label": "Filters"
+		},
+		{
+			"fieldname": "filters",
+			"fieldtype": "Table",
+			"label": "Report Filters",
+			"options": "JMIT Report Filter"
+		},
+		{
+			"fieldname": "section_formatting",
+			"fieldtype": "Section Break",
+			"label": "Formatting"
+		},
+		{
+			"fieldname": "enabled",
+			"fieldtype": "Check",
+			"label": "Enabled",
+			"default": 1
+		}
+	],
+	"idx": 1,
+	"links": [],
+	"modified": "2024-01-18 00:00:00.000000",
+	"modified_by": "Administrator",
+	"module": "JMIT Report Builder",
+	"name": "JMIT Report",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"submit": 0,
+			"write": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "Desc",
+	"states": [],
+	"track_changes": 1
+}

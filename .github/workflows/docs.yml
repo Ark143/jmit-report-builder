@@ -1,0 +1,50 @@
+name: Documentation Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install sphinx sphinx-rtd-theme
+    
+    - name: Check documentation
+      run: |
+        # Verify all markdown files are valid
+        python -c "
+        import os
+        import re
+        for root, dirs, files in os.walk('.'):
+            for file in files:
+                if file.endswith('.md'):
+                    filepath = os.path.join(root, file)
+                    with open(filepath, 'r') as f:
+                        content = f.read()
+                        if '```' in content:
+                            # Check for proper code block closure
+                            opens = content.count('```')
+                            if opens % 2 != 0:
+                                print(f'ERROR: Unclosed code block in {filepath}')
+                                exit(1)
+        print('All markdown files are valid')
+        "
+    
+    - name: List documentation files
+      run: |
+        echo "Documentation files found:"
+        ls -la *.md

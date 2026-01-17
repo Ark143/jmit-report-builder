@@ -1,0 +1,57 @@
+{
+	"creation": "2024-01-18 00:00:00.000000",
+	"doctype": "DocType",
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"field_name",
+		"operator",
+		"filter_value",
+		"filter_type",
+		"mandatory"
+	],
+	"fields": [
+		{
+			"fieldname": "field_name",
+			"fieldtype": "Data",
+			"label": "Field Name",
+			"reqd": 1
+		},
+		{
+			"fieldname": "operator",
+			"fieldtype": "Select",
+			"label": "Operator",
+			"options": "=\n!=\n>\n<\n>=\n<=\nLIKE\nIN\nNOT IN",
+			"default": "=",
+			"reqd": 1
+		},
+		{
+			"fieldname": "filter_value",
+			"fieldtype": "Data",
+			"label": "Filter Value"
+		},
+		{
+			"fieldname": "filter_type",
+			"fieldtype": "Select",
+			"label": "Filter Type",
+			"options": "Static\nUser Prompt\nReport Parameter",
+			"default": "Static"
+		},
+		{
+			"fieldname": "mandatory",
+			"fieldtype": "Check",
+			"label": "Mandatory",
+			"default": 0
+		}
+	],
+	"idx": 1,
+	"istable": 1,
+	"modified": "2024-01-18 00:00:00.000000",
+	"modified_by": "Administrator",
+	"module": "JMIT Report Builder",
+	"name": "JMIT Report Filter",
+	"owner": "Administrator",
+	"permissions": [],
+	"sort_field": "modified",
+	"sort_order": "Desc"
+}

@@ -1,0 +1,443 @@
+/**
+ * JMIT Report Builder - Main Styles
+ * Styling for report builder interface
+ */
+
+/* Report Builder Container */
+.report-designer {
+	padding: 15px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	margin: 15px 0;
+}
+
+.designer-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ddd;
+}
+
+.designer-header h3 {
+	margin: 0;
+	color: #2c3e50;
+	font-weight: 600;
+}
+
+.btn-group {
+	display: flex;
+	gap: 8px;
+}
+
+.btn-group .btn {
+	padding: 6px 12px;
+	font-size: 13px;
+	font-weight: 500;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.btn-group .btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.designer-body {
+	background-color: white;
+	padding: 15px;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.designer-body .row {
+	margin-bottom: 15px;
+}
+
+/* Panels */
+.panel {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+	overflow: hidden;
+}
+
+.panel-heading {
+	background-color: #f8f9fa;
+	border-bottom: 1px solid #ddd;
+	padding: 12px 15px;
+	font-weight: 500;
+	color: #333;
+}
+
+.panel-heading h5 {
+	margin: 0;
+	color: #2c3e50;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.panel-body {
+	padding: 15px;
+}
+
+/* Form Elements */
+.form-group {
+	margin-bottom: 12px;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.form-group label {
+	margin: 0;
+	font-weight: 500;
+	color: #555;
+	min-width: 100px;
+}
+
+.form-control {
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 13px;
+	flex: 1;
+	transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+	outline: none;
+	border-color: #2563eb;
+	box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+textarea.form-control {
+	font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+	font-size: 12px;
+	line-height: 1.5;
+	background-color: #f9f9f9;
+}
+
+/* Buttons */
+.btn {
+	padding: 8px 12px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	font-size: 13px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	font-weight: 500;
+}
+
+.btn-primary {
+	background-color: #2563eb;
+	color: white;
+	border-color: #1d4ed8;
+}
+
+.btn-primary:hover {
+	background-color: #1d4ed8;
+	border-color: #1e40af;
+}
+
+.btn-success {
+	background-color: #059669;
+	color: white;
+	border-color: #047857;
+}
+
+.btn-success:hover {
+	background-color: #047857;
+	border-color: #065f46;
+}
+
+.btn-info {
+	background-color: #0891b2;
+	color: white;
+	border-color: #0e7490;
+}
+
+.btn-info:hover {
+	background-color: #0e7490;
+	border-color: #164e63;
+}
+
+.btn-danger {
+	background-color: #dc2626;
+	color: white;
+	border-color: #b91c1c;
+}
+
+.btn-danger:hover {
+	background-color: #b91c1c;
+	border-color: #991b1b;
+}
+
+.btn-sm {
+	padding: 4px 8px;
+	font-size: 12px;
+}
+
+.btn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+/* Column/Grouping/Filter Rows */
+.column-row,
+.grouping-row,
+.filter-row {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 8px;
+	align-items: center;
+}
+
+.column-row .form-control,
+.grouping-row .form-control,
+.grouping-row select,
+.filter-row .form-control,
+.filter-row select {
+	flex: 1;
+}
+
+/* Report Preview */
+.designer-preview {
+	margin-top: 20px;
+}
+
+#report-preview {
+	animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#preview-data {
+	max-height: 600px;
+	overflow-y: auto;
+}
+
+/* Report Table */
+.report-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+.report-table thead {
+	background-color: #2c3e50;
+	color: white;
+}
+
+.report-table th {
+	padding: 10px;
+	text-align: left;
+	font-weight: 600;
+	border-bottom: 2px solid #34495e;
+}
+
+.report-table td {
+	padding: 8px 10px;
+	border-bottom: 1px solid #ecf0f1;
+}
+
+.report-table tbody tr:hover {
+	background-color: #f9f9f9;
+}
+
+/* Group Header Styling */
+.report-table tr.group-header {
+	background-color: #d9e1f2;
+	font-weight: 600;
+	border-top: 2px solid #2c3e50;
+	border-bottom: 2px solid #2c3e50;
+}
+
+.report-table tr.group-header td {
+	padding: 10px;
+	color: #2c3e50;
+}
+
+/* Subtotal Styling */
+.report-table tr.subtotal {
+	background-color: #e8e8e8;
+	font-weight: 600;
+	border-top: 1px solid #999;
+	border-bottom: 2px solid #999;
+}
+
+.report-table tr.subtotal td {
+	padding: 10px;
+	color: #333;
+}
+
+/* Alerts */
+.alert {
+	padding: 12px 15px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	border-left: 4px solid;
+}
+
+.alert-info {
+	background-color: #cce5ff;
+	border-color: #2563eb;
+	color: #1e3a8a;
+}
+
+.alert-success {
+	background-color: #d1fae5;
+	border-color: #059669;
+	color: #065f46;
+}
+
+.alert-danger {
+	background-color: #fee2e2;
+	border-color: #dc2626;
+	color: #7f1d1d;
+}
+
+.alert-warning {
+	background-color: #fef3c7;
+	border-color: #d97706;
+	color: #92400e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.report-designer {
+		padding: 10px;
+	}
+
+	.designer-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 15px;
+	}
+
+	.btn-group {
+		width: 100%;
+	}
+
+	.btn-group .btn {
+		flex: 1;
+	}
+
+	.column-row,
+	.grouping-row,
+	.filter-row {
+		flex-direction: column;
+	}
+
+	.form-group {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.form-group label {
+		min-width: auto;
+	}
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+	.report-designer {
+		background-color: #2b2b2b;
+	}
+
+	.designer-body {
+		background-color: #1e1e1e;
+		color: #e0e0e0;
+	}
+
+	.panel-heading {
+		background-color: #3b3b3b;
+		border-bottom-color: #555;
+		color: #e0e0e0;
+	}
+
+	.form-control,
+	select {
+		background-color: #3b3b3b;
+		color: #e0e0e0;
+		border-color: #555;
+	}
+
+	.form-control:focus {
+		border-color: #4a9eff;
+	}
+
+	.report-table td {
+		border-bottom-color: #555;
+	}
+}
+
+/* Loading State */
+.loading::after {
+	content: '';
+	animation: spinner 1s linear infinite;
+	border: 2px solid #f3f3f3;
+	border-top: 2px solid #2563eb;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+@keyframes spinner {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Utility Classes */
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.hidden {
+	display: none;
+}
