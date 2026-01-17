@@ -1,0 +1,6 @@
+# Frappe patches for JMIT Report Builder
+# Format: patch_module_name
+# This file is used by Frappe to track and execute migrations/patches
+
+# Patches will be added here as the app evolves
+# Example: jmit_report_builder.patches.v0_1_0.add_new_fields
