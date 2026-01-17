@@ -1,9 +1,0 @@
-{
-  "js": [
-    "js/jmit_report_builder.js",
-    "js/report_designer.js"
-  ],
-  "css": [
-    "css/jmit_report_builder.css"
-  ]
-}

@@ -1,0 +1,13 @@
+{
+  "app_name": "jmit_report_builder",
+  "app_title": "JMIT Report Builder",
+  "app_publisher": "JMIT",
+  "app_version": "0.0.1",
+  "app_icon": "octicon octicon-file-directory",
+  "app_color": "#2563eb",
+  "author": "JMIT",
+  "description": "Crystal Report Clone for ERPNext v15",
+  "email": "info@jmit.com",
+  "license": "MIT",
+  "category": "Tools"
+}
