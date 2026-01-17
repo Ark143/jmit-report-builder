@@ -44,6 +44,9 @@ api_methods = {
 # Website
 has_website = False
 
+# Web Assets
+web_asset_folders = ["public"]
+
 # Roles
 roles = [
 	{"role_name": "Report Manager", "doctype": "Role"}

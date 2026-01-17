@@ -1,0 +1,14 @@
+{
+  "entry_points": {
+    "jmit_report_builder": {
+      "js": [
+        "js/jmit_report_builder.js",
+        "js/report_designer.js"
+      ],
+      "css": [
+        "css/jmit_report_builder.css"
+      ]
+    }
+  },
+  "output_dir": "assets/jmit_report_builder"
+}
